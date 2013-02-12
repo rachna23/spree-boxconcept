@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130211094068) do
+ActiveRecord::Schema.define(:version => 20130212083017) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -83,6 +83,21 @@ ActiveRecord::Schema.define(:version => 20130211094068) do
 
   add_index "spree_assets", ["viewable_id"], :name => "index_assets_on_viewable_id"
   add_index "spree_assets", ["viewable_type", "type"], :name => "index_assets_on_viewable_type_and_type"
+
+  create_table "spree_bookings", :force => true do |t|
+    t.string   "pick_date"
+    t.string   "del_date"
+    t.string   "addr"
+    t.string   "dest"
+    t.string   "vol"
+    t.string   "ph_no"
+    t.string   "email"
+    t.string   "name"
+    t.boolean  "park_zone"
+    t.string   "length_rental"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
 
   create_table "spree_calculators", :force => true do |t|
     t.string   "type"
