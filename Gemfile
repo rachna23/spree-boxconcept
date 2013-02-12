@@ -39,10 +39,13 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
-gem 'spree', '1.3.2'
+gem 'debugger'
+gem 'spree', '1.3.1'
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => '1-3-stable'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-stable'
 
 #Implement Twitter Bootstrap
 gem 'bootstrap-sass', '~> 2.2.2.0'
+
+
+gem 'spree_booking',:path => '../BoxConcept/spree_booking'

@@ -5,9 +5,7 @@
 // the compiled file.
 //
 //= require jquery
-//= require jquery_ujs
 
-//= require store/spree_core
-//= require store/spree_promo
-
-//= require_tree .
+//= require store/bootstrap.min
+//= require store/bootstrap-datetimepicker
+//= require store/bootstrap-datetimepicker.bg
