@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
+ruby '1.9.3' 
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -48,4 +49,4 @@ gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-s
 gem 'bootstrap-sass', '~> 2.2.2.0'
 
 
-gem 'spree_booking',:path => '../BoxConcept/spree_booking'
+gem 'spree_booking',:git =>'git@github.com:sibanand-cis/booking_box.git'
