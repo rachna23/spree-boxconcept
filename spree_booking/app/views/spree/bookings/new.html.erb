@@ -7,7 +7,7 @@
 <% end %>
 
 <div class="booking_form">
-  <%= form_for @booking, {:class => "form-inline"} do |form| %>
+  <%= form_for @booking do |form| %>
 
   <% if @booking.errors.any? %>
     <div id="error_explanation">
