@@ -49,4 +49,4 @@ gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-s
 gem 'bootstrap-sass', '~> 2.2.2.0'
 
 
-gem 'spree_booking',:git =>'git@github.com:sibanand-cis/booking_box.git'
+gem 'spree_booking',:git =>'git://github.com/sibanand-cis/booking_box.git'
