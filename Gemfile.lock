@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/sibanand-cis/booking_box.git
-  revision: 593caf954f06d1f351cda0172a2ea241235b64b2
+  revision: 888cd5b27bf47f349a861010aaac27396eb30346
   specs:
     spree_booking (1.3.1)
       spree_core (~> 1.3.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_gateway.git
-  revision: 2c9e850010e49e27d17e9aa484719c976c4b1800
+  revision: dd0a34f4ad03946213d4f5547b5c812cb21befa8
   branch: 1-3-stable
   specs:
     spree_gateway (1.2.0.rc2)
@@ -143,7 +143,7 @@ GEM
     money (5.0.0)
       i18n (~> 0.4)
       json
-    multi_json (1.5.1)
+    multi_json (1.6.0)
     multi_xml (0.5.3)
     mysql2 (0.3.11)
     nokogiri (1.5.6)
