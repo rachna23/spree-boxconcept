@@ -1,11 +1,4 @@
 GIT
-  remote: git://github.com/reinkcar/easy_globalize3_accessors.git
-  revision: f044a3b596fd708f288906e9d3e222a76f9fc66f
-  specs:
-    easy_globalize3_accessors (1.2.0)
-      globalize3 (~> 0.2.0.beta1)
-
-GIT
   remote: git://github.com/sibanand-cis/booking_box.git
   revision: f25b82d083e6abf433e25eb3796910cfa26d1d79
   specs:
@@ -40,6 +33,20 @@ GIT
       i18n (~> 0.6)
       rails-i18n
       spree_core
+
+GIT
+  remote: git@github.com:sibanand-cis/spree_multi_lingual.git
+  revision: 6d332ef67094da4cbcdffbafc4ded9dc1da9487f
+  branch: 1-3-stable
+  specs:
+    spree_multi_lingual (1.0.0)
+      coffee-rails
+      easy_globalize3_accessors
+      globalize3 (= 0.2.0)
+      i18n
+      rack-contrib
+      routing-filter (~> 0.3.1)
+      spree_core (~> 1.3)
 
 GEM
   remote: https://rubygems.org/
@@ -128,6 +135,8 @@ GEM
       warden (~> 1.2.1)
     devise-encryptable (0.1.1)
       devise (>= 2.1.0.rc)
+    easy_globalize3_accessors (1.2.0)
+      globalize3 (~> 0.2.0.beta1)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -306,20 +315,17 @@ DEPENDENCIES
   bootstrap-sass (~> 2.2.2.0)
   coffee-rails (~> 3.2.1)
   debugger
-  easy_globalize3_accessors!
-  ffaker
   globalize3
   jquery-rails
   mysql2
   pg
-  rack-contrib
   rails (= 3.2.11)
   rails-i18n
-  routing-filter (~> 0.3.1)
   sass-rails (~> 3.2.3)
   spree (= 1.3.1)
   spree_auth_devise!
   spree_booking!
   spree_gateway!
   spree_i18n!
+  spree_multi_lingual!
   uglifier (>= 1.0.3)
