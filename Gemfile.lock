@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/sibanand-cis/booking_box.git
-  revision: 888cd5b27bf47f349a861010aaac27396eb30346
+  revision: f25b82d083e6abf433e25eb3796910cfa26d1d79
   specs:
     spree_booking (1.3.1)
       spree_core (~> 1.3.1)
@@ -24,6 +24,29 @@ GIT
     spree_gateway (1.2.0.rc2)
       savon
       spree_core (~> 1.0)
+
+GIT
+  remote: git://github.com/spree/spree_i18n.git
+  revision: aed11baf0e49a6c566ec13bfe61b56621b8db261
+  specs:
+    spree_i18n (1.0.0)
+      i18n (~> 0.6)
+      rails-i18n
+      spree_core
+
+GIT
+  remote: git@github.com:jipiboily/spree_multi_lingual.git
+  revision: 6d332ef67094da4cbcdffbafc4ded9dc1da9487f
+  branch: 1-3-stable
+  specs:
+    spree_multi_lingual (1.0.0)
+      coffee-rails
+      easy_globalize3_accessors
+      globalize3 (= 0.2.0)
+      i18n
+      rack-contrib
+      routing-filter (~> 0.3.1)
+      spree_core (~> 1.3)
 
 GEM
   remote: https://rubygems.org/
@@ -112,10 +135,16 @@ GEM
       warden (~> 1.2.1)
     devise-encryptable (0.1.1)
       devise (>= 2.1.0.rc)
+    easy_globalize3_accessors (1.2.0)
+      globalize3 (~> 0.2.0.beta1)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffaker (1.12.1)
+    globalize3 (0.2.0)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      paper_trail (~> 2)
     gyoku (1.0.0)
       builder (>= 2.1.2)
     highline (1.6.11)
@@ -149,6 +178,9 @@ GEM
     nokogiri (1.5.6)
     nori (2.0.3)
     orm_adapter (0.4.0)
+    paper_trail (2.7.0)
+      activerecord (~> 3.0)
+      railties (~> 3.0)
     paperclip (2.8.0)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
@@ -164,6 +196,8 @@ GEM
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-ssl (1.3.3)
       rack
     rack-test (0.6.2)
@@ -176,6 +210,8 @@ GEM
       activesupport (= 3.2.11)
       bundler (~> 1.0)
       railties (= 3.2.11)
+    rails-i18n (0.7.2)
+      i18n (~> 0.5)
     railties (3.2.11)
       actionpack (= 3.2.11)
       activesupport (= 3.2.11)
@@ -190,6 +226,8 @@ GEM
       polyamorous (~> 0.5.0)
     rdoc (3.12.1)
       json (~> 1.4)
+    routing-filter (0.3.1)
+      actionpack
     sass (3.2.5)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -277,13 +315,17 @@ DEPENDENCIES
   bootstrap-sass (~> 2.2.2.0)
   coffee-rails (~> 3.2.1)
   debugger
+  globalize3
   jquery-rails
   mysql2
   pg
   rails (= 3.2.11)
+  rails-i18n
   sass-rails (~> 3.2.3)
   spree (= 1.3.1)
   spree_auth_devise!
   spree_booking!
   spree_gateway!
+  spree_i18n!
+  spree_multi_lingual!
   uglifier (>= 1.0.3)
