@@ -329,3 +329,5 @@ DEPENDENCIES
   spree_i18n!
   spree_multi_lingual!
   uglifier (>= 1.0.3)
+
+#
