@@ -1,23 +1,15 @@
-# Ignore bundler config
-#/.bundle
-
-# Ignore the default SQLite database.
-/db/*.sqlite3
-
-# Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
-
-# Ignore other unneeded files.
-doc/
-*.swp
-*~
-.project
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
 .DS_Store
+*~
+log/*
+tmp/**/*
+config/database.yml
+config/config.yml
+db:*
+public/contextual-help*
+public/files/*
+public/assets/*
 
-#don't know why this was added
-#/config/database.yml
-
-#keep assets from overriding what we have on heroku
-#public/spree
-.elasticbeanstalk/
