@@ -45,7 +45,7 @@ gem 'spree', '1.3.1'
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => '1-3-stable'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-stable'
 gem 'globalize3'
-gem 'spree_multi_lingual', :git => "https://github.com/jipiboily/spree_multi_lingual.git",:branch =>'1-3-stable'
+gem 'spree_multi_lingual', :github => "jipiboily/spree_multi_lingual.git",:branch =>'1-3-stable'
 
 #Implement Twitter Bootstrap
 gem 'bootstrap-sass', '~> 2.2.2.0'
