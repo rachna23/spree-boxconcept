@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require jquery-migrate-1.0.0
+//= require store/bootstrap.min
+//= require store/bootstrap-datetimepicker
+//= require store/bootstrap-datetimepicker.de
