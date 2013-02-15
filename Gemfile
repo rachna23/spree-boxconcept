@@ -6,7 +6,7 @@ ruby '1.9.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+
 
 group :production do
   gem 'pg'
@@ -40,7 +40,12 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'debugger'
+group :development do
+  gem 'debugger'
+  gem 'mysql2'
+end
+
+
 gem 'spree', '1.3.1'
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => '1-3-stable'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-stable'
@@ -49,8 +54,10 @@ gem 'globalize3'
 #Implement Twitter Bootstrap
 gem 'bootstrap-sass', '~> 2.2.2.0'
 
-
-gem 'spree_booking',:git =>'git://github.com/sibanand-cis/booking_box.git'
+gem 'spree_booking',:git => 'git@github.com:sibanand-cis/booking_box.git'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 
 gem 'rails-i18n'
+gem 'spree_static_content', :git => "git@github.com:sibanand-cis/spree_static_content.git"
+gem "paperclip"
+gem "ckeditor","4.0.1"

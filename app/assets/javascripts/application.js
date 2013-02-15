@@ -16,3 +16,4 @@
 //= require store/bootstrap.min
 //= require store/bootstrap-datetimepicker
 //= require store/bootstrap-datetimepicker.de
+//= require ckeditor/init

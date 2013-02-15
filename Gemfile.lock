@@ -1,11 +1,4 @@
 GIT
-  remote: git://github.com/sibanand-cis/booking_box.git
-  revision: f25b82d083e6abf433e25eb3796910cfa26d1d79
-  specs:
-    spree_booking (1.3.1)
-      spree_core (~> 1.3.1)
-
-GIT
   remote: git://github.com/sibanand-cis/spree_multi_lingual.git
   revision: 6d332ef67094da4cbcdffbafc4ded9dc1da9487f
   branch: 1-3-stable
@@ -47,6 +40,20 @@ GIT
       i18n (~> 0.6)
       rails-i18n
       spree_core
+
+GIT
+  remote: git@github.com:sibanand-cis/booking_box.git
+  revision: 88a6d70bb1a70a43cc97ee0542aed3fb2d02403b
+  specs:
+    spree_booking (1.3.1)
+      spree_core (~> 1.3.1)
+
+GIT
+  remote: git@github.com:sibanand-cis/spree_static_content.git
+  revision: 9859cf64af011752de0cb47fba6e05e415bc5a7b
+  specs:
+    spree_static_content (1.1.0.beta)
+      spree_core (~> 1.3.0)
 
 GEM
   remote: https://rubygems.org/
@@ -106,6 +113,9 @@ GEM
       sass (~> 3.2)
     builder (3.0.4)
     cancan (1.6.8)
+    ckeditor (4.0.1)
+      mime-types
+      orm_adapter
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.1)
@@ -172,7 +182,7 @@ GEM
     money (5.0.0)
       i18n (~> 0.4)
       json
-    multi_json (1.6.0)
+    multi_json (1.6.1)
     multi_xml (0.5.3)
     mysql2 (0.3.11)
     nokogiri (1.5.6)
@@ -313,11 +323,13 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (~> 2.2.2.0)
+  ckeditor (= 4.0.1)
   coffee-rails (~> 3.2.1)
   debugger
   globalize3
   jquery-rails
   mysql2
+  paperclip
   pg
   rails (= 3.2.11)
   rails-i18n
@@ -328,4 +340,5 @@ DEPENDENCIES
   spree_gateway!
   spree_i18n!
   spree_multi_lingual!
+  spree_static_content!
   uglifier (>= 1.0.3)
