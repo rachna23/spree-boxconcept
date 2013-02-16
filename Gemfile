@@ -54,7 +54,8 @@ gem 'globalize3'
 #Implement Twitter Bootstrap
 gem 'bootstrap-sass', '~> 2.2.2.0'
 
-gem 'spree_booking',:git => 'git@github.com:sibanand-cis/booking_box.git'
+gem 'spree_booking',:git => 'git://github.com/sibanand-cis/booking_box.git'
+
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 
 gem 'rails-i18n'
