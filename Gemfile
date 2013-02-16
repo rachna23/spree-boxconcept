@@ -59,6 +59,6 @@ gem 'spree_booking',:git => 'git://github.com/sibanand-cis/booking_box.git'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 
 gem 'rails-i18n'
-gem 'spree_static_content', :git => "git@github.com:sibanand-cis/spree_static_content.git"
+gem 'spree_static_content', :git => "git://github.com/sibanand-cis/spree_static_content.git"
 gem "paperclip"
 gem "ckeditor","4.0.1"
