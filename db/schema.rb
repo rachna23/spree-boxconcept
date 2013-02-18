@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130215180744) do
+ActiveRecord::Schema.define(:version => 20130218144824) do
 
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
@@ -28,6 +28,29 @@ ActiveRecord::Schema.define(:version => 20130215180744) do
 
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
+
+  create_table "delayed_jobs", :force => true do |t|
+    t.integer  "priority",   :default => 0
+    t.integer  "attempts",   :default => 0
+    t.text     "handler"
+    t.text     "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string   "locked_by"
+    t.string   "queue"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+  end
+
+  add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
+
+  create_table "forms", :force => true do |t|
+    t.string   "name_of_form"
+    t.string   "default_lang"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -290,6 +313,18 @@ ActiveRecord::Schema.define(:version => 20130215180744) do
   end
 
   add_index "spree_orders", ["number"], :name => "index_spree_orders_on_number"
+
+  create_table "spree_page_translations", :force => true do |t|
+    t.integer  "spree_page_id"
+    t.string   "locale"
+    t.string   "title"
+    t.text     "body"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "spree_page_translations", ["locale"], :name => "index_spree_page_translations_on_locale"
+  add_index "spree_page_translations", ["spree_page_id"], :name => "index_spree_page_translations_on_spree_page_id"
 
   create_table "spree_pages", :force => true do |t|
     t.string   "title"

@@ -7,7 +7,6 @@ ruby '1.9.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
-
 group :production do
   gem 'pg'
 end
@@ -43,13 +42,14 @@ gem 'jquery-rails'
 group :development do
   gem 'debugger'
   gem 'mysql2'
+  gem 'meta_request', '0.2.1'
 end
 
 
 gem 'spree', '1.3.1'
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => '1-3-stable'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-stable'
-gem 'spree_multi_lingual', :git => "git://github.com/sibanand-cis/spree_multi_lingual.git",:branch =>'1-3-stable'
+gem 'spree_multi_lingual', :git => 'git://github.com/sibanand-cis/spree_multi_lingual.git',:branch => '1-3-stable'
 gem 'globalize3'
 #Implement Twitter Bootstrap
 gem 'bootstrap-sass', '~> 2.2.2.0'
@@ -62,3 +62,6 @@ gem 'rails-i18n'
 gem 'spree_static_content', :git => "git://github.com/sibanand-cis/spree_static_content.git"
 gem "paperclip"
 gem "ckeditor","4.0.1"
+gem 'delayed_job_active_record'
+gem 'time_diff'
+gem 'formtastic'
