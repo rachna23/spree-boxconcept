@@ -20,6 +20,13 @@ GIT
       spree_core (~> 1.3)
 
 GIT
+  remote: git://github.com/sibanand-cis/spree_ordersetting.git
+  revision: cefa9eeabfb523cd2b02d0fba4504f556f42e42a
+  specs:
+    spree_ordersetting (1.3.1)
+      spree_core (~> 1.3.1)
+
+GIT
   remote: git://github.com/sibanand-cis/spree_static_content.git
   revision: 734d27d42bd3059b16ca838f0a02616aef400b15
   specs:
@@ -357,6 +364,7 @@ DEPENDENCIES
   spree_gateway!
   spree_i18n!
   spree_multi_lingual!
+  spree_ordersetting!
   spree_static_content!
   time_diff
   uglifier (>= 1.0.3)

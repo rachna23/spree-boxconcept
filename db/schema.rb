@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130218144824) do
+ActiveRecord::Schema.define(:version => 20130219133706) do
 
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
@@ -46,8 +46,13 @@ ActiveRecord::Schema.define(:version => 20130218144824) do
   add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
 
   create_table "forms", :force => true do |t|
-    t.string   "name_of_form"
-    t.string   "default_lang"
+    t.string   "form_name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "order_settings", :force => true do |t|
+    t.integer  "default_rate"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
