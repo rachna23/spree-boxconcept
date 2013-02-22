@@ -66,3 +66,4 @@ gem "ckeditor","4.0.1"
 gem 'delayed_job_active_record'
 gem 'time_diff'
 gem 'formtastic'
+

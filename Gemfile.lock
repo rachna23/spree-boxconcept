@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/sibanand-cis/booking_box.git
-  revision: e2c0a6c271cd865e0a11d08fc488d409cdb030e1
+  revision: 42c762ac411609784737a53e7f8ecfccf005f919
   specs:
     spree_booking (1.3.1)
       spree_core (~> 1.3.1)
@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: git://github.com/sibanand-cis/spree_ordersetting.git
-  revision: cefa9eeabfb523cd2b02d0fba4504f556f42e42a
+  revision: 1a8211da9e35ce97bedf080ab4abc29beaacb17b
   specs:
     spree_ordersetting (1.3.1)
       spree_core (~> 1.3.1)
@@ -55,7 +55,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_i18n.git
-  revision: 031144943fe62440b8f2c15cd5109bfcc21f09ea
+  revision: 6416e2b3595bcad5d88b92ccca383df4e10d7c98
   specs:
     spree_i18n (1.0.0)
       i18n (~> 0.6)
