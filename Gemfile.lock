@@ -1,8 +1,21 @@
 GIT
+  remote: git://github.com/astro/utf8cleaner.git
+  revision: 9e3a081c2a7b7bb8e0aff59f34265131e192d794
+  specs:
+    utf8cleaner (0.0.1)
+
+GIT
   remote: git://github.com/sibanand-cis/booking_box.git
   revision: 42c762ac411609784737a53e7f8ecfccf005f919
   specs:
     spree_booking (1.3.1)
+      spree_core (~> 1.3.1)
+
+GIT
+  remote: git://github.com/sibanand-cis/spree_form_language.git
+  revision: b52c75303faef58214c550c38ee059f0bb21b039
+  specs:
+    spree_form_language (1.3.1)
       spree_core (~> 1.3.1)
 
 GIT
@@ -361,6 +374,7 @@ DEPENDENCIES
   spree (= 1.3.1)
   spree_auth_devise!
   spree_booking!
+  spree_form_language!
   spree_gateway!
   spree_i18n!
   spree_multi_lingual!
@@ -368,3 +382,4 @@ DEPENDENCIES
   spree_static_content!
   time_diff
   uglifier (>= 1.0.3)
+  utf8cleaner!
