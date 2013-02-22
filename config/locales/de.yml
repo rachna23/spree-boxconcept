@@ -1,29 +1,23 @@
-
-
+---
 de:
-
-  Storage: "Lagerung"
-  Relocation: "Umzug"
-  home: "Zuhause"
-  Prices: "Preise"
-  Offers: "Angebote"
-  Policies: "Policies"
-  Impressum: "Impressium"
-  Feedback: "Feedback & Empfehlungen"
-
-  thankyou: "Vielen Dank für die Buchung"
-  booking: "Bookings"
-  no_of_boxes: "Anzahl der Boxen"
-  deli_date: "Delivery Date"
-  recurring: "Recurring"
-  name: "Name"
-  phone_number: "Telefonnummer"
-  pick_up_addr: "Pick-Up Adresse"
-  pick_up: "Pick-Up Datum"
-  deli_addr: "Delivery Adresse"
-  deli_date: "Liefertermin"
-  park: "Parking Zone"
-  rental_period: "Länge der Mietdauer"
-
-  post_code: "Postleitzahl / Adresse"
-  dest: "Destination Code"
+  home: Home
+  booking:
+    thankyou: Vielen Dank für die Buchung
+    booking: Buchungen
+    no_of_boxes: Anzahl der Boxen
+    delivery_date: Liefertermin
+    recurring: Recurring
+    name: Name
+    email: Email 
+    phone_number: Telefonnummer
+    pick_up_address: Pick-Up Adresse
+    pick_up_date: Pick-Up Datum
+    delivery_address: Delivery Adresse
+    parking_zone: Parking Zone
+    length_of_rental: Länge der Mietdauer
+  miniform:
+    post_code: Postleitzahl / Adresse
+    pick_date: Abholdatum
+    dest_code: Destination Code
+    delivery_date: Liefertermin
+    volume: Volumen
