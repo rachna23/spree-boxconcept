@@ -72,3 +72,5 @@ gem 'formtastic'
 gem 'spree_form_language',:git => "git://github.com/sibanand-cis/spree_form_language.git"
 
 gem 'utf8cleaner',:git => 'git://github.com/astro/utf8cleaner.git'
+
+gem 'ransack','0.7.3'
