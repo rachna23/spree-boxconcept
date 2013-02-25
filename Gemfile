@@ -43,6 +43,7 @@ group :development do
   gem 'debugger'
   gem 'mysql2'
   gem 'meta_request', '0.2.1'
+  gem 'thin'
 end
 
 
@@ -55,8 +56,9 @@ gem 'globalize3'
 gem 'bootstrap-sass', '~> 2.2.2.0'
 
 gem 'spree_booking',:git => 'git://github.com/sibanand-cis/booking_box.git'
-gem 'spree_ordersetting',:git => 'git://github.com/sibanand-cis/spree_ordersetting.git'
 
+#gem 'spree_ordersetting',:path => '/home/cis/Desktop/Project/spree21feb/BoxConcept/spree_ordersetting'
+#gem 'spree_available_space',:path => '/home/cis/Desktop/Project/spree21feb/BoxConcept/spree_available_space'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 
 gem 'rails-i18n'
@@ -67,6 +69,6 @@ gem 'delayed_job_active_record'
 gem 'time_diff'
 gem 'formtastic'
 
-gem 'spree_form_language',:git => 'git://github.com/sibanand-cis/spree_form_language.git'
+gem 'spree_form_language',:git => "git://github.com/sibanand-cis/spree_form_language.git"
 
 gem 'utf8cleaner',:git => 'git://github.com/astro/utf8cleaner.git'
