@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/sibanand-cis/booking_box.git
-  revision: 394f8d7c355b42ba94487c157df4fdb7324a79b1
+  revision: fa67166b1c1f7ca5fd5752b7a709460551bfa1fa
   specs:
     spree_booking (1.3.1)
       spree_core (~> 1.3.1)
@@ -31,6 +31,13 @@ GIT
       rack-contrib
       routing-filter (~> 0.3.1)
       spree_core (~> 1.3)
+
+GIT
+  remote: git://github.com/sibanand-cis/spree_ordersetting.git
+  revision: 1a8211da9e35ce97bedf080ab4abc29beaacb17b
+  specs:
+    spree_ordersetting (1.3.1)
+      spree_core (~> 1.3.1)
 
 GIT
   remote: git://github.com/sibanand-cis/spree_static_content.git
@@ -141,14 +148,14 @@ GEM
       execjs
     coffee-script-source (1.4.0)
     columnize (0.3.6)
-    daemons (1.1.8)
-    debugger (1.3.1)
+    daemons (1.1.9)
+    debugger (1.3.3)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.1.1)
-      debugger-ruby_core_source (~> 1.1.8)
+      debugger-ruby_core_source (~> 1.2.0)
     debugger-linecache (1.1.2)
       debugger-ruby_core_source (>= 1.1.1)
-    debugger-ruby_core_source (1.1.8)
+    debugger-ruby_core_source (1.2.0)
     deface (0.9.1)
       nokogiri (~> 1.5.0)
       rails (~> 3.1)
@@ -167,7 +174,7 @@ GEM
     easy_globalize3_accessors (1.2.0)
       globalize3 (~> 0.2.0.beta1)
     erubis (2.7.0)
-    eventmachine (0.12.10)
+    eventmachine (1.0.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffaker (1.12.1)
@@ -259,11 +266,11 @@ GEM
       actionpack (~> 3.0)
       activerecord (~> 3.0)
       polyamorous (~> 0.5.0)
-    rdoc (3.12.1)
+    rdoc (3.12.2)
       json (~> 1.4)
     routing-filter (0.3.1)
       actionpack
-    sass (3.2.5)
+    sass (3.2.6)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -324,7 +331,7 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     state_machine (1.1.2)
     stringex (1.3.3)
-    thin (1.3.1)
+    thin (1.5.0)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
@@ -378,6 +385,7 @@ DEPENDENCIES
   spree_gateway!
   spree_i18n!
   spree_multi_lingual!
+  spree_ordersetting!
   spree_static_content!
   thin
   time_diff

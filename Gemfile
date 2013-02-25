@@ -57,7 +57,7 @@ gem 'bootstrap-sass', '~> 2.2.2.0'
 
 gem 'spree_booking',:git => 'git://github.com/sibanand-cis/booking_box.git'
 
-#gem 'spree_ordersetting',:path => '/home/cis/Desktop/Project/spree21feb/BoxConcept/spree_ordersetting'
+gem 'spree_ordersetting',:git => 'git://github.com/sibanand-cis/spree_ordersetting.git'
 #gem 'spree_available_space',:path => '/home/cis/Desktop/Project/spree21feb/BoxConcept/spree_available_space'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 
