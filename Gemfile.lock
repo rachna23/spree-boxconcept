@@ -140,6 +140,15 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
+    columnize (0.3.6)
+    daemons (1.1.8)
+    debugger (1.3.1)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.1.1)
+      debugger-ruby_core_source (~> 1.1.8)
+    debugger-linecache (1.1.2)
+      debugger-ruby_core_source (>= 1.1.1)
+    debugger-ruby_core_source (1.1.8)
     deface (0.9.1)
       nokogiri (~> 1.5.0)
       rails (~> 3.1)
@@ -158,6 +167,7 @@ GEM
     easy_globalize3_accessors (1.2.0)
       globalize3 (~> 0.2.0.beta1)
     erubis (2.7.0)
+    eventmachine (0.12.10)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffaker (1.12.1)
@@ -190,12 +200,16 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta_request (0.2.1)
+      rack-contrib
+      rails
     mime-types (1.21)
     money (5.0.0)
       i18n (~> 0.4)
       json
     multi_json (1.6.1)
     multi_xml (0.5.3)
+    mysql2 (0.3.11)
     nokogiri (1.5.6)
     nori (2.0.3)
     orm_adapter (0.4.0)
@@ -310,6 +324,10 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     state_machine (1.1.2)
     stringex (1.3.3)
+    thin (1.3.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     thor (0.17.0)
     tilt (1.3.3)
     time_diff (0.3.0)
@@ -340,10 +358,13 @@ DEPENDENCIES
   bootstrap-sass (~> 2.2.2.0)
   ckeditor (= 4.0.1)
   coffee-rails (~> 3.2.1)
+  debugger
   delayed_job_active_record
   formtastic
   globalize3
   jquery-rails
+  meta_request (= 0.2.1)
+  mysql2
   paperclip
   pg
   rails (= 3.2.11)
@@ -358,6 +379,7 @@ DEPENDENCIES
   spree_i18n!
   spree_multi_lingual!
   spree_static_content!
+  thin
   time_diff
   uglifier (>= 1.0.3)
   utf8cleaner!

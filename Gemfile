@@ -38,13 +38,13 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# To use debugger
-# group :development do
-#   gem 'debugger'
-#   gem 'mysql2'
-#   gem 'meta_request', '0.2.1'
-#   gem 'thin'
-# end
+
+group :development do
+  gem 'debugger'
+  gem 'mysql2'
+  gem 'meta_request', '0.2.1'
+  gem 'thin'
+end
 
 
 gem 'spree', '1.3.1'
