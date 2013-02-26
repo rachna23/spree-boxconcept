@@ -5,3 +5,9 @@ Deface::Override.new(:virtual_path => "spree/layouts/admin",
                        )
 
 
+Deface::Override.new(:virtual_path => "spree/layouts/admin",
+                       :name => 'admin_tab_spaces',
+                       :insert_bottom => "[data-hook='admin_tabs']",
+                       :text => "<%= tab(:available_spaces,:icon => 'icon-file') %>"
+                       )
+

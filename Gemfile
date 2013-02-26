@@ -43,7 +43,7 @@ gem 'jquery-rails'
 group :development do
   gem 'debugger'
   gem 'mysql2'
-  #gem 'meta_request', '0.2.1'
+  gem 'meta_request', '0.2.1'
   gem 'thin'
 end
 
@@ -59,7 +59,7 @@ gem 'bootstrap-sass', '~> 2.2.2.0'
 gem 'spree_booking',:git => 'git://github.com/sibanand-cis/booking_box.git'
 
 gem 'spree_ordersetting',:git => 'git://github.com/sibanand-cis/spree_ordersetting.git'
-#gem 'spree_available_space',:path => '/home/cis/Desktop/Project/spree21feb/BoxConcept/spree_available_space'
+gem 'spree_available_space',:git => 'git://github.com/sibanand-cis/spree_available_space.git'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 
 
@@ -76,3 +76,6 @@ gem 'spree_form_language',:git => "git://github.com/sibanand-cis/spree_form_lang
 gem 'utf8cleaner',:git => 'git://github.com/astro/utf8cleaner.git'
 
 gem 'ransack','0.7.3'
+
+
+gem "prawn", "0.12.0"
