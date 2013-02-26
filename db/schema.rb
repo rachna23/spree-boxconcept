@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130219133706) do
+ActiveRecord::Schema.define(:version => 20130225094343) do
 
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
@@ -129,18 +129,18 @@ ActiveRecord::Schema.define(:version => 20130219133706) do
   add_index "spree_assets", ["viewable_type", "type"], :name => "index_assets_on_viewable_type_and_type"
 
   create_table "spree_bookings", :force => true do |t|
-    t.string   "pick_date"
-    t.string   "del_date"
-    t.string   "addr"
-    t.string   "dest"
-    t.string   "vol"
-    t.string   "ph_no"
+    t.string   "pickup_date"
+    t.string   "delivery_date"
+    t.string   "pickup_address"
+    t.string   "delivery_address"
+    t.string   "volume"
+    t.string   "phone_number"
     t.string   "email"
     t.string   "name"
-    t.boolean  "park_zone"
+    t.boolean  "parking_zone"
     t.string   "length_rental"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
     t.boolean  "recurring"
   end
 
