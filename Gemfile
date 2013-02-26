@@ -44,7 +44,6 @@ group :development do
   gem 'debugger'
   gem 'mysql2'
   gem 'meta_request', '0.2.1'
-  gem 'thin'
 end
 
 
