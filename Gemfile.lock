@@ -351,7 +351,6 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     state_machine (1.1.2)
     stringex (1.3.3)
-    thin (1.5.0)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
@@ -409,7 +408,6 @@ DEPENDENCIES
   spree_multi_lingual!
   spree_ordersetting!
   spree_static_content!
-  thin
   time_diff
   uglifier (>= 1.0.3)
   utf8cleaner!
