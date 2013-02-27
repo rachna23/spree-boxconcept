@@ -5,6 +5,13 @@ GIT
     utf8cleaner (0.0.1)
 
 GIT
+  remote: git://github.com/sibanand-cis/booking_box.git
+  revision: 6d30d95a13a39fba7239db7ba4891bb9d9da258b
+  specs:
+    spree_booking (1.3.1)
+      spree_core (~> 1.3.1)
+
+GIT
   remote: git://github.com/sibanand-cis/spree_available_space.git
   revision: 666dd74123b61a3a3bea9954cfec09fe2301c665
   specs:
@@ -31,6 +38,13 @@ GIT
       rack-contrib
       routing-filter (~> 0.3.1)
       spree_core (~> 1.3)
+
+GIT
+  remote: git://github.com/sibanand-cis/spree_ordersetting.git
+  revision: c2aa6ebb429d5113990efa87d8d02d76d4d85f05
+  specs:
+    spree_ordersetting (1.3.1)
+      spree_core (~> 1.3.1)
 
 GIT
   remote: git://github.com/sibanand-cis/spree_static_content.git
@@ -67,18 +81,6 @@ GIT
       i18n (~> 0.6)
       rails-i18n
       spree_core
-
-PATH
-  remote: Gems_for_BoxConcept/booking_box
-  specs:
-    spree_booking (1.3.1)
-      spree_core (~> 1.3.1)
-
-PATH
-  remote: Gems_for_BoxConcept/spree_ordersetting
-  specs:
-    spree_ordersetting (1.3.1)
-      spree_core (~> 1.3.1)
 
 GEM
   remote: https://rubygems.org/
