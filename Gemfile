@@ -57,9 +57,10 @@ gem 'bootstrap-sass', '~> 2.2.2.0'
 
 gem 'spree_booking',:git => 'git://github.com/sibanand-cis/booking_box.git'
 
-#gem 'spree_booking',:path => '/home/cis/Desktop/BoxConcept/Gems_for_BoxConcept/booking_box'
 
 gem 'spree_ordersetting',:git => 'git://github.com/sibanand-cis/spree_ordersetting.git'
+
+
 gem 'spree_available_space',:git => 'git://github.com/sibanand-cis/spree_available_space.git'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 
@@ -79,3 +80,6 @@ gem 'utf8cleaner',:git => 'git://github.com/astro/utf8cleaner.git'
 
 
 gem "prawn", "0.12.0"
+
+
+gem 'country-select'
