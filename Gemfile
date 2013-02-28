@@ -58,6 +58,7 @@ gem 'bootstrap-sass', '~> 2.2.2.0'
 gem 'spree_booking',:git => 'git://github.com/sibanand-cis/booking_box.git'
 
 
+
 gem 'spree_ordersetting',:git => 'git://github.com/sibanand-cis/spree_ordersetting.git'
 
 
@@ -81,5 +82,5 @@ gem 'utf8cleaner',:git => 'git://github.com/astro/utf8cleaner.git'
 
 gem "prawn", "0.12.0"
 
+gem 'carmen-rails'
 
-gem 'country-select'
