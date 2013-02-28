@@ -4,17 +4,26 @@ de:
   booking:
     thankyou: Vielen Dank für die Buchung
     booking: Buchungen
-    no_of_boxes: Anzahl der Boxen
+    no_of_boxes: ! "Anzahl der Boxen  12 \tÈ"
     delivery_date: Liefertermin
     recurring: Recurring
     name: Name
-    email: Email 
+    email: Email
     phone_number: Telefonnummer
     pick_up_address: Pick-Up Adresse
     pick_up_date: Pick-Up Datum
     delivery_address: Delivery Adresse
     parking_zone: Parking Zone
     length_of_rental: Länge der Mietdauer
+    next_month_booking: Next Month Bookings Germany
+    pickup_address_streetname_and_number: Pickup Address Streetname and Number
+    pickup_address_postal_code: Pickup Address Postal Code
+    pickup_address_city: Pickup Address City
+    pickup_address_country: Pickup Address Country
+    delivery_address_streetname_and_number: Delivery Address Streetname and Number
+    delivery_address_postal_code: Delivery Address Postal Code
+    delivery_address_city: Delivery Address City
+    delivery_address_country: Delivery Address Country
   miniform:
     post_code: Postleitzahl / Adresse
     pick_date: Abholdatum

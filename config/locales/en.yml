@@ -4,7 +4,7 @@ en:
   booking:
     thankyou: Thank you for booking
     booking: Bookings
-    no_of_boxes: Number of boxes
+    no_of_boxes: ! 'Number of boxes '
     delivery_date: Delivery Date
     recurring: Recurring
     name: Name
@@ -13,9 +13,17 @@ en:
     pick_up_address: Pick-Up Address
     pick_up_date: Pick-Up Date
     delivery_address: Delivery Address
-    delivery_date: Delivery Date
     parking_zone: Parking Zone
     length_of_rental: Length of Rental Period
+    next_month_booking: Next Month Bookings
+    pickup_address_streetname_and_number: Pickup Address Streetname and Number
+    pickup_address_postal_code: Pickup Address Postal Code
+    pickup_address_city: Pickup Address City
+    pickup_address_country: Pickup Address Country
+    delivery_address_streetname_and_number: Delivery Address Streetname and Number
+    delivery_address_postal_code: Delivery Address Postal Code
+    delivery_address_city: Delivery Address City
+    delivery_address_country: Delivery Address Country
   miniform:
     post_code: Post Code/Address
     pick_date: Pickup Date
