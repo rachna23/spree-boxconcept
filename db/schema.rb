@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130225094343) do
+ActiveRecord::Schema.define(:version => 20130228104106) do
+
+  create_table "available_spaces", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "cities", :force => true do |t|
+    t.string   "name"
+    t.integer  "group_id"
+    t.integer  "country_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
@@ -28,6 +41,12 @@ ActiveRecord::Schema.define(:version => 20130225094343) do
 
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
+
+  create_table "countries", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
@@ -51,10 +70,17 @@ ActiveRecord::Schema.define(:version => 20130225094343) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "groups", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "order_settings", :force => true do |t|
     t.integer  "default_rate"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
+    t.integer  "minimum_booking_period"
   end
 
   create_table "spree_activators", :force => true do |t|
@@ -139,9 +165,18 @@ ActiveRecord::Schema.define(:version => 20130225094343) do
     t.string   "name"
     t.boolean  "parking_zone"
     t.string   "length_rental"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
     t.boolean  "recurring"
+    t.integer  "rating"
+    t.string   "pickup_address_streetname_and_number"
+    t.string   "pickup_address_postal_code"
+    t.string   "pickup_address_city"
+    t.string   "pickup_address_country"
+    t.string   "delivery_address_streetname_and_number"
+    t.string   "delivery_address_postal_code"
+    t.string   "delivery_address_city"
+    t.string   "delivery_address_country"
   end
 
   create_table "spree_calculators", :force => true do |t|
