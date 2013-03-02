@@ -41,7 +41,7 @@ GIT
 
 GIT
   remote: git://github.com/sibanand-cis/spree_ordersetting.git
-  revision: 9f39b21bbcfcc8e589b25ea79b3508a298ece46e
+  revision: 6b67406cf7fb9d86770ad7300a94574999b83c19
   specs:
     spree_ordersetting (1.3.1)
       spree_core (~> 1.3.1)
