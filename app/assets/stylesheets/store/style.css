@@ -27,7 +27,7 @@ body{background:url(/assets/pattern-1-gimmick.png) repeat-y center top; margin:0
 .gdl-search-form form {margin-bottom:0px;}
 .top-search-wrapper input[type="text"]{border: 0 none; border-radius: 3px 3px 3px 3px; display: block; font-size: 11px; height: 14px; line-height: 14px; margin: 0; padding: 10px 35px 10px 10px; width: 160px; color:#ccc; background:#f3f3f3;}
 .top-search-wrapper input[type="submit"] {background:url(/assets/top-search-button.png) right center no-repeat;  -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; border-color: -moz-use-text-color; border-image: none; border-radius: 0 0 0 0; border-style: none none none solid; border-width: 0 0 0 1px; display: block; float: left;height: 14px;margin-top: -7px;padding: 0;position: absolute;right: 10px;top: 50%;width: 24px;border-color:#DBDBDB;}
-.nav-hold {background:url("/assets/menu-active.png") #272727; background-position: 0 bottom;background-repeat: repeat-x;  padding: 0 16px 0 0; font-size:13px; margin:margin: 0 10px; float:left; width:944px; height:46px;}
+.nav-hold {background:url("/assets/menu-active.png") #272727; background-position: 0 bottom;background-repeat: repeat-x;  padding: 0 16px 0 0; font-size:13px; margin: 0 10px; float:left; width:944px; height:46px;}
 
 .nav li a { color: #FFFFFF;display: block; line-height: 24px; padding: 11px 25px; position: relative; text-decoration: none; float:left;}
 .nav li a:hover { background-color: #1BC4DE; background-image: url("/assets/menu-active.png"); background-position: 0 bottom; background-repeat: repeat-x; transition:color 300ms ease 0s, background-color 300ms ease 0s, opacity 300ms ease 0s;}
