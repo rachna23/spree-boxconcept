@@ -8,10 +8,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-migrate-1.0.0
-//= require_tree .
 //= require admin/spree_core
 //= require admin/spree_promo
 //= require admin/spree_multi_lingual
 //= require admin/spree_multi_lingual_class
 //= require ckeditor/init
+//= require admin/highcharts
+//= require admin/exporting
 
