@@ -55,11 +55,12 @@ gem 'globalize3'
 #Implement Twitter Bootstrap
 gem 'bootstrap-sass', '~> 2.2.2.0'
 gem 'spree_booking',:git => 'git://github.com/sibanand-cis/booking_box.git'
+#gem 'spree_booking',:path => '/home/cis/Desktop/27feb/BoxConcept/booking_box'
 
 
 gem 'spree_ordersetting',:git => 'git://github.com/sibanand-cis/spree_ordersetting.git'
 gem 'spree_available_space',:git => 'git://github.com/sibanand-cis/spree_available_space.git'
-#gem 'spree_available_space',:path => '/home/cis/Desktop/27feb/BoxConcept/spree_available_space'
+
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 
 
