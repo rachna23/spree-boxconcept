@@ -18,7 +18,7 @@ body{background:url(/assets/pattern-1-gimmick.png) repeat-y center top; margin:0
 .top-nav {max-width:1000px; margin:0 auto; height:7px; background:#1BC4DE;}
 .container {padding:20px; margin:0 auto; max-width:960px;}
 .header {max-width:960px; margin:0 auto;}
-.logo-wrapper {padding:50px 38px; float:left; margin:0 10px; max-width:100%;}
+.logo-wrapper {padding:36px 38px; float:left; margin:0 10px; max-width:100%;}
 .logo-right-text { float: right; text-align: right; margin:40px 10px 0; text-align:right;}
 .logo-right-text-content {margin-bottom:12px;}
 .head-top {font-size: 14px; color: #aaa;}
@@ -46,7 +46,7 @@ body{background:url(/assets/pattern-1-gimmick.png) repeat-y center top; margin:0
 .social-icon-wrapper {float:right; margin-top:15px;}
 .social-icon{float:left; opacity:1;  margin-right:10px;}
 .social-icon img:hover {float:left; opacity:0.6;}
-.banner-hold {width:1000px; background:#fff;margin-left: -52px;}
+.banner-hold {width:1000px; background:#fff;margin-left: -35px;}
 .banner {width:100%;}
 .prev {width:30px; height:144px; background:url(/assets/top-slider-nav-left.png) #1BC4DE center center no-repeat; margin-top:100px; float:left;}
 .main {width:940px; height:395px; background:#fff; float:left;}
@@ -189,5 +189,5 @@ cursor: pointer;
 }
 
 #content{
-	margin-left: 52px;
+	margin-left: 35px;
 }

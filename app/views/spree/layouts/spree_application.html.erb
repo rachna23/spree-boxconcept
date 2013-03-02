@@ -9,7 +9,7 @@
   </head>
 
   <!--<body class="<%= body_class %>" id="<%#= @body_id || 'default' %>" data-hook="body">-->
-  <body>
+  <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
 <div class="theme-option option-active">
 <!-- started top header -->  
     <div class="select-layout">
@@ -26,12 +26,12 @@
       <div class="logo-wrapper">
             <h1>
                 <a href="#">
-                <img alt="default-logo" src="assets/default-logo.png"></a>
+                <img alt="default-logo" src="/assets/default-logo.png"></a>
             </h1>
       </div>
         <div class="logo-right-text">
             <div class="logo-right-text-content">
-            <%= render :partial => 'spree/shared/language_chooser' %>  
+            <%#= render :partial => 'spree/shared/language_chooser' %>  
             <img  alt="" src="assets/email.png">
             <span class="head-top">contact@phoenix.com</span>
             <span style="margin-left: 15px; margin-right: 15px; ">|</span>

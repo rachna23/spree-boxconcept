@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: git://github.com/sibanand-cis/spree_available_space.git
-  revision: 666dd74123b61a3a3bea9954cfec09fe2301c665
+  revision: d41b45efeae4c896dc1dd72a4ab652ff2040ff73
   specs:
     spree_available_space (1.3.1)
       spree_core (~> 1.3.1)
