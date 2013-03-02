@@ -54,7 +54,6 @@ gem 'spree_multi_lingual', :git => 'git://github.com/sibanand-cis/spree_multi_li
 gem 'globalize3'
 #Implement Twitter Bootstrap
 gem 'bootstrap-sass', '~> 2.2.2.0'
-
 gem 'spree_booking',:git => 'git://github.com/sibanand-cis/booking_box.git'
 gem 'spree_ordersetting',:git => 'git://github.com/sibanand-cis/spree_ordersetting.git'
 gem 'spree_available_space',:git => 'git://github.com/sibanand-cis/spree_available_space.git'
