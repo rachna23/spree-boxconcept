@@ -1,0 +1,149 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie ie7" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie ie8" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
+  <head data-hook="inside_head">
+    <%= render :partial => 'spree/shared/head' %>
+  </head>
+
+  <!--<body class="<%= body_class %>" id="<%#= @body_id || 'default' %>" data-hook="body">-->
+  <body>
+<div class="theme-option option-active">
+<!-- started top header -->  
+    <div class="select-layout">
+      <span class="option-header" style="display:none;">Select Layout</span>
+      <a href="#">&gt; Boxed</a><br>
+      <a href="#">&gt; Full-Width</a>
+    </div>   
+    <div class="option-toggle">&gt;</div>
+  </div>
+<div class="wrapper-hold">
+    <div class="wrapper">
+    <div class="top-nav"></div>
+    <div class="header">
+      <div class="logo-wrapper">
+            <h1>
+                <a href="#">
+                <img alt="default-logo" src="assets/default-logo.png"></a>
+            </h1>
+      </div>
+        <div class="logo-right-text">
+            <div class="logo-right-text-content">
+            <%= render :partial => 'spree/shared/language_chooser' %>  
+            <img  alt="" src="assets/email.png">
+            <span class="head-top">contact@phoenix.com</span>
+            <span style="margin-left: 15px; margin-right: 15px; ">|</span>
+            <img alt="" src="assets/phone.png">
+            <span class="head-top">1800-299-234-22</span>
+            </div>
+                <div class="top-search-wrapper">
+                    <div class="gdl-search-form">
+                        <form action="http://themes.goodlayers2.com/bluediamond/" id="searchform" method="get">
+                                    <div id="search-text" class="search-text">
+                                <input type="text" placeholder="Search...">
+                            </div>
+                            <input type="submit" value="" >
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    <!-- till top header  -->    
+        <%= render :partial => 'spree/shared/header' %>
+
+    <div class="clear"></div>
+    </div>
+ 
+        <%= breadcrumbs(@taxon) %>
+        <%= render :partial => 'spree/shared/sidebar' if content_for? :sidebar %>
+        <div id="content" class="columns <%= !content_for?(:sidebar) ? "sixteen" : "twelve" %>" data-hook>
+          <%= flash_messages %>
+          <%= yield %>
+        </div>
+        <div class="clear"></div>
+   
+    <div class="row">
+    <div class="column-hold">
+      <div class="column">
+            <div class="row-head">Live Color Changer</div>
+            <div class="row-text"><p>Donec ullamcorper nulla non metus ac is mollis, est non commodo luctus, nisi  ula, eget lacinia odio sem nec elit. Aene ndum nulla sed consectetur.esest. Don ec ullamcorper nulla non metu.</p></div>
+            <a href="#" class="gdl-button">Read More</a>
+        </div>
+        <div class="column">
+            <div class="row-head">Page Builder</div>
+            <div class="row-text"><p>Donec ullamcorper nulla non metus ac is mollis, est non commodo luctus, nisi  ula, eget lacinia odio sem nec elit. Aene ndum nulla sed consectetur.esest. Don ec ullamcorper nulla non metu.</p></div>
+            <a href="#" class="gdl-button">Read More</a>
+        </div>
+        <div class="column">
+            <div class="row-head">Responsive Design</div>
+            <div class="row-text"><p>Donec ullamcorper nulla non metus ac is mollis, est non commodo luctus, nisi  ula, eget lacinia odio sem nec elit. Aene ndum nulla sed consectetur.esest. Don ec ullamcorper nulla non metu.</p></div>
+            <a href="#" class="gdl-button">Read More</a>
+        </div>
+        <div class="column">
+            <div class="row-head">Unlimited Color</div>
+            <div class="row-text"><p>Donec ullamcorper nulla non metus ac is mollis, est non commodo luctus, nisi  ula, eget lacinia odio sem nec elit. Aene ndum nulla sed consectetur.esest. Don ec ullamcorper nulla non metu.</p></div>
+            <a href="#" class="gdl-button">Read More</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    </div>
+    <div class="row">
+ 
+    <div class="clear"></div>
+    </div>
+
+    <div class="strip"></div>
+    <div class="btm-blue">
+      <div class="n-p">
+          <a href="#" class="btm-prev"></a>
+            <a href="#" class="btm-nxt"></a>
+        </div>
+    </div>
+    <div class="footer-hold">
+      <div class="footer">
+          <div class="footer-top">
+              <div class="links">
+                  <a href="#">AGBs</a>
+                    <a href="#">Impressum</a>
+                    <a href="#">Kritik & Anregungen</a>
+                </div>
+            <div class="social-icon-wrapper">
+          <div class="social-icon">
+              <a href="#"><img src="assets/facebook.png" title="Like us on Facebook" style="width: 23px;"/></a>
+            </div>
+            <div class="social-icon">
+              <a href="#"><img src="assets/linkedin.png" title="Follow us on Linkedin" style="width: 23px;" /></a>
+            </div>
+            <div class="social-icon">
+              <a href="#"><img src="assets/stumble-upon.png" title="Follow us on Stumble-Upon"  /></a>
+            </div>
+            <div class="social-icon">
+              <a href="#"><img src="assets/twitter.png" title="Follow us on Twitter"  style="width: 23px;" /></a>
+            </div>
+            <div class="social-icon">
+              <a href="#"><img src="assets/pinterest.png" title="Follow us on Pinterest" /></a>
+            </div>
+        </div>
+            </div>
+            <div class="footer-btm">
+              <div class="footer-btm-hold">
+                <div class="footer-left">Copyright 2012, <a href="#">GoodLayers Inc.</a></div>
+                <div class="footer-right"><a href="#">Home</a> | <a href="#">Support</a> | <a href="#">About</a> | <a href="#">Contact</a></div>
+                 <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+             <div class="clear"></div>
+        </div>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+</body>
+</html>
+
