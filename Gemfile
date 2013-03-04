@@ -75,6 +75,8 @@ gem 'spree_form_language',:git => "git://github.com/sibanand-cis/spree_form_lang
 
 gem 'utf8cleaner',:git => 'git://github.com/astro/utf8cleaner.git'
 
+gem 'carmen-rails'
+
 
 
 
