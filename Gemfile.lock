@@ -140,6 +140,10 @@ GEM
       sass (~> 3.2)
     builder (3.0.4)
     cancan (1.6.8)
+    carmen (1.0.0.beta2)
+    carmen-rails (1.0.0.beta3)
+      carmen (~> 1.0.0.beta2)
+      rails
     ckeditor (4.0.1)
       mime-types
       orm_adapter
@@ -364,6 +368,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (~> 2.2.2.0)
+  carmen-rails
   ckeditor (= 4.0.1)
   coffee-rails (~> 3.2.1)
   debugger
