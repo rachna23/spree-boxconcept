@@ -7,13 +7,11 @@
   <head data-hook="inside_head">
     <%= render :partial => 'spree/shared/head' %>
   </head>
-
-  <!--<body class="<%= body_class %>" id="<%#= @body_id || 'default' %>" data-hook="body">-->
-  <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
+<body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
 <div class="theme-option option-active">
 <!-- started top header -->  
     <div class="select-layout">
-      <span class="option-header" style="display:none;">Select Layout</span>
+      <span class="option-header">Select Layout</span>
       <a href="#">&gt; Boxed</a><br>
       <a href="#">&gt; Full-Width</a>
     </div>   
@@ -25,8 +23,7 @@
     <div class="header">
       <div class="logo-wrapper">
             <h1>
-                <a href="#">
-                <img alt="default-logo" src="/assets/default-logo.png"></a>
+              <%= link_to image_tag("default-logo.png"), root_path %>
             </h1>
       </div>
         <div class="logo-right-text">
@@ -131,7 +128,8 @@
             <div class="footer-btm">
               <div class="footer-btm-hold">
                 <div class="footer-left">Copyright 2012, <a href="#">GoodLayers Inc.</a></div>
-                <div class="footer-right"><a href="#">Home</a> | <a href="#">Support</a> | <a href="#">About</a> | <a href="#">Contact</a></div>
+                <!--<div class="footer-right"><a href="#">Home</a> | <a href="#">Support</a> | <a href="#">About</a> | <a href="#">Contact</a></div> -->
+                <div class="footer-right"> <%= render :partial => 'spree/shared/footer' %></div>
                  <div class="clear"></div>
                 </div>
                 <div class="clear"></div>
@@ -141,9 +139,10 @@
     </div>
     </div>
 </div>
-<script type="text/javascript">
-var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
-</script>
-</body>
-</html>
+<!DOCTYPE html>
 
+<script>
+$(".option-toggle").click(function () {
+$(".select-layout").toggle();
+});
+</script>

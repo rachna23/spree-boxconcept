@@ -1,18 +1,21 @@
     <!-- this is the code for slider -->
     <div class="banner-hold">
       <div class="banner">
-          <div class="prev"></div>
-            <div class="main"></div>
-            <div class="next"></div>
+        <div id="sliderFrame">
+        <div id="ribbon"></div>
+        <div id="slider">
+          <%= image_tag("Untitled-1.jpg", :alt => "product image",:style=>"width=100%;margin-left:10px;") %>
+          <%= image_tag("slider2.jpg", :alt => "product image",:style=>"width=100%;margin-left:10px;") %>
+          <%= image_tag("slider3.jpg", :alt => "product image",:style=>"width=100%;margin-left:10px;") %>
+
         </div>
-        <div class="ban-shad">
-        <div class="btm-nav">
-          <span>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            </span>
+        <div id="htmlcaption" style="display: none;">
+            <em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
+        </div>
+    </div>
+        </div>
+  
+       
         <div class="clear"></div> 
         </div>
         </div>
@@ -23,21 +26,10 @@
     <div class="container-fluid">
       <div class="row-fluid">
    
-        <div class="span2">
-          Volume Calculator
-        
-        </div>
-         <div class="span5">
+           
+        <div class="span3" style="margin-left:232px;">
           
-        </div>
-         <div class="span2">
-          8 week rent---4 week  FREE!
-        </div>
-         
-        <div class="span3">
-          
-       Request/Booking :
-       The form will be here
+       <h2>Request/Booking:The form will be here</h2>
        
           <%= render :partial=>"mini_form"%>
 
@@ -48,27 +40,8 @@
  
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span2" >
-         KEEPING your personal storage box for you
-        </div>
-        <div class="span2" >
-          YOU LOADED the stuff directly before the doorstep
-        </div>
-        <div class="span3" >
-           WE BRING AB, CAMPS
-           or DELIVER 1.75 / box including delivery their box
-           to one new address
-        </div>
-        <div class="span2" >
-             packaging
-             1.75 /carton
-             including
-             delivery
-          
-        </div>
-        <div class="span3" >
-          <%= link_to "PRODUCTS",products_path %>
-
+        <div class="span3" style="margin-left:232px;">
+         <%= link_to "PRODUCTS",products_path %>
         </div>
       </div>
     </div>

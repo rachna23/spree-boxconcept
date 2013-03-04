@@ -18,3 +18,4 @@
 //= require store/bootstrap-datetimepicker.de
 //= require ckeditor/init
 //= require modernizr
+//= require js-image-slider
