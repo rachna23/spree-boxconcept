@@ -143,6 +143,15 @@
 
 <script>
 $(".option-toggle").click(function () {
-$(".select-layout").toggle();
+  var mrgin;
+  if(jQuery(".theme-option").css('margin-left')=="0px")
+  {
+    mrgin ="-145px"
+  }else{
+    mrgin ="0px"
+  }  
+  jQuery(".theme-option").animate({
+   'margin-left':mrgin
+  },300)
 });
 </script>

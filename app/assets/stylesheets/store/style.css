@@ -160,13 +160,12 @@ display: none;
 }
 div.select-layout{
 background: none repeat scroll 0 0 #FFFFFF;
-border: 1px solid #E7E7E7;
+border: 1px solid #e7e7e7;
 float: left;
 height: 75px;
-margin-left: -3px;
-padding: 12px 157px;
+padding: 10px 30px;
 width: auto;
-display: none;
+/*display: none;*/
 }
 .option-toggle {
 float: left;
