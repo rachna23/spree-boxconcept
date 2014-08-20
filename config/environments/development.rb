@@ -36,6 +36,7 @@ BoxConcept::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
   ActionMailer::Base.smtp_settings = {
     :address => "smtp.gmail.com",
     :enable_starttls_auto => true,

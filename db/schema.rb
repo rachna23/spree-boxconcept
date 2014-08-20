@@ -11,19 +11,39 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130228104106) do
+ActiveRecord::Schema.define(:version => 20130305132115) do
 
   create_table "available_spaces", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  create_table "cities", :force => true do |t|
+  create_table "booking_cities", :force => true do |t|
     t.string   "name"
-    t.integer  "group_id"
-    t.integer  "country_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.integer  "booking_country_id"
+  end
+
+  create_table "booking_countries", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "booking_groups", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.float    "pickup_price"
+    t.float    "dropoff_price"
+  end
+
+  create_table "booking_postal_codes", :force => true do |t|
+    t.string   "booking_postal_codes_id"
+    t.integer  "booking_group_id"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
   end
 
   create_table "ckeditor_assets", :force => true do |t|
@@ -42,12 +62,6 @@ ActiveRecord::Schema.define(:version => 20130228104106) do
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
 
-  create_table "countries", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
     t.integer  "attempts",   :default => 0
@@ -64,14 +78,18 @@ ActiveRecord::Schema.define(:version => 20130228104106) do
 
   add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
 
-  create_table "forms", :force => true do |t|
-    t.string   "form_name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+  create_table "file_uploads", :force => true do |t|
+    t.string   "file_name"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "attachment_updated_at"
   end
 
-  create_table "groups", :force => true do |t|
-    t.string   "name"
+  create_table "forms", :force => true do |t|
+    t.string   "form_name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -80,7 +98,9 @@ ActiveRecord::Schema.define(:version => 20130228104106) do
     t.integer  "default_rate"
     t.datetime "created_at",             :null => false
     t.datetime "updated_at",             :null => false
+    t.integer  "default_box_size"
     t.integer  "minimum_booking_period"
+    t.integer  "parking_permit"
   end
 
   create_table "spree_activators", :force => true do |t|
@@ -492,6 +512,7 @@ ActiveRecord::Schema.define(:version => 20130228104106) do
     t.datetime "created_at",                              :null => false
     t.datetime "updated_at",                              :null => false
     t.boolean  "on_demand",            :default => false
+    t.integer  "number_of_days"
   end
 
   add_index "spree_products", ["available_on"], :name => "index_spree_products_on_available_on"

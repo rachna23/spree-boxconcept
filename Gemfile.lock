@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/sibanand-cis/booking_box.git
-  revision: d37cbeffb281a95cc743397c723bf13ded579eda
+  revision: 2132f4237a3e4662577d3462c5f31719b4b18844
   specs:
     spree_booking (1.3.1)
       spree_core (~> 1.3.1)
@@ -16,6 +16,13 @@ GIT
   revision: 4ca5876087951efcd794f0961654a5e0a2578429
   specs:
     spree_available_space (1.3.1)
+      spree_core (~> 1.3.1)
+
+GIT
+  remote: git://github.com/sibanand-cis/spree_city_group.git
+  revision: 49f5fd5f8dc95f1b3704d686dba8a955f12560d8
+  specs:
+    spree_city_group (1.3.1)
       spree_core (~> 1.3.1)
 
 GIT
@@ -41,14 +48,14 @@ GIT
 
 GIT
   remote: git://github.com/sibanand-cis/spree_ordersetting.git
-  revision: 6b67406cf7fb9d86770ad7300a94574999b83c19
+  revision: e15fb0f39d038e6eac8fa401b78b6cfb04405e0b
   specs:
     spree_ordersetting (1.3.1)
       spree_core (~> 1.3.1)
 
 GIT
   remote: git://github.com/sibanand-cis/spree_static_content.git
-  revision: 7eebaee021138afdf0f7334f59afcbd3903fd62a
+  revision: ef089559b331206c093ab54358645802cb32de29
   specs:
     spree_static_content (1.1.0.beta)
       spree_core (~> 1.3.0)
@@ -75,7 +82,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_i18n.git
-  revision: b532ef2c73eca1fc9cfe1e736fe73ceb4148934a
+  revision: d367064abd8398ae1ac5e836e71becee1e443449
   specs:
     spree_i18n (1.0.0)
       i18n (~> 0.6)
@@ -157,7 +164,7 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.5.0)
+    coffee-script-source (1.6.1)
     columnize (0.3.6)
     debugger (1.3.3)
       columnize (>= 0.3.1)
@@ -171,7 +178,7 @@ GEM
       rails (~> 3.1)
     delayed_job (3.0.5)
       activesupport (~> 3.0)
-    delayed_job_active_record (0.4.2)
+    delayed_job_active_record (0.4.3)
       activerecord (>= 2.1.0, < 4)
       delayed_job (~> 3.0)
     devise (2.2.3)
@@ -348,7 +355,7 @@ GEM
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.35)
+    tzinfo (0.3.36)
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
@@ -387,6 +394,7 @@ DEPENDENCIES
   spree_auth_devise!
   spree_available_space!
   spree_booking!
+  spree_city_group!
   spree_form_language!
   spree_gateway!
   spree_i18n!
